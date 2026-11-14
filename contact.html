@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | CSC Digital (Sagar computer)</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="logo">
+        <div class="logo-icon">CSC</div>
+        <div>
+            <h2>Digital (Sagar computer)</h2>
+            <span>आपकी डिजिटल सेवा, आपके द्वार</span>
+        </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+</header>
+
+<!-- HERO SECTION -->
+<section class="contact-hero">
+
+    <div class="contact-hero-content">
+
+        <span class="contact-tag">CONTACT US</span>
+
+        <h1>हमसे जुड़ें,<br>
+            हम आपकी <span>मदद करेंगे।</span>
+        </h1>
+
+        <p>
+            किसी भी डिजिटल सेवा, ऑनलाइन आवेदन या अन्य जानकारी
+            के लिए हमसे संपर्क करें। आपकी सहायता करना हमारा उद्देश्य है।
+        </p>
+
+        <a href="contact.html" class="contact-btn">
+            संपर्क जानकारी देखें →
+        </a>
+
+    </div>
+
+    <div class="contact-hero-image">
+        <img src="sagar.png" alt="Contact CSC Digital Seva Kendra">
+    </div>
+
+</section>
+
+<!-- CONTACT DETAILS -->
+<section class="contact-details" id="contact-details">
+
+    <div class="contact-heading">
+        <span>GET IN TOUCH</span>
+        <h2>हमसे संपर्क करने के तरीके</h2>
+        <p>हमारी संपर्क जानकारी नीचे देखें।</p>
+    </div>
+
+    <div class="contact-cards">
+
+        <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>हमारा पता</h3>
+            <p>BIRNA, HANUMANGANJ, PRAYAGRAJ, UTTAR PRADESH</p>
+            <span>हमारे CSC सेवा केंद्र पर आएं।</span>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>मोबाइल नंबर</h3>
+            <p>05332297545</p>
+            <span>फोन पर जानकारी प्राप्त करें।</span>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email Address</h3>
+            <p>अपना Email यहां डालें</p>
+            <span>हमें Email के माध्यम से संदेश भेजें।</span>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <h3>WhatsApp Support</h3>
+            <p>9026171603</p>
+            <span>अपनी समस्या के बारे में पूछें।</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-form-section">
+
+    <div class="contact-form-info">
+
+        <span>WRITE TO US</span>
+
+        <h2>हमें अपना संदेश भेजें</h2>
+
+        <p>
+            अगर आपको किसी सेवा से संबंधित जानकारी चाहिए या
+            कोई सवाल पूछना है, तो नीचे दिया गया फॉर्म भरें।
+        </p>
+
+        <div class="contact-info-point">
+            <span>✓</span>
+            सही जानकारी भरें।
+        </div>
+
+        <div class="contact-info-point">
+            <span>✓</span>
+            अपना मोबाइल नंबर सही लिखें।
+        </div>
+
+        <div class="contact-info-point">
+            <span>✓</span>
+            अपनी समस्या स्पष्ट रूप से बताएं।
+        </div>
+
+    </div>
+
+    <div class="contact-form-box">
+
+        <form id="contactForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>आपका नाम</label>
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="अपना नाम लिखें"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>मोबाइल नंबर</label>
+                    <input
+                        type="tel"
+                        id="contactPhone"
+                        placeholder="10 अंकों का मोबाइल नंबर"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label>Email Address (Optional)</label>
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="अपना Email लिखें"
+                >
+            </div>
+
+            <div class="form-group">
+                <label>आपका विषय</label>
+
+                <select id="contactSubject" required>
+                    <option value="">विषय चुनें</option>
+                    <option>ऑनलाइन आवेदन</option>
+                    <option>दस्तावेज संबंधी सहायता</option>
+                    <option>आवेदन की स्थिति</option>
+                    <option>अन्य जानकारी</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>आपका संदेश</label>
+
+                <textarea
+                    id="contactMessage"
+                    rows="5"
+                    placeholder="अपनी समस्या या संदेश लिखें..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit">
+                संदेश भेजें →
+            </button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section">
+
+    <div class="contact-heading">
+        <span>OUR LOCATION</span>
+        <h2>हमारा स्थान</h2>
+        <p>CSC Digital Seva Kendra, Prayagraj, Uttar Pradesh</p>
+    </div>
+
+    <div class="map-placeholder">
+        <div class="map-placeholder-icon">📍</div>
+        <h3>Prayagraj, Uttar Pradesh</h3>
+        <p>यहां अपने CSC सेंटर का सही Google Maps स्थान जोड़ें।</p>
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="contact-cta">
+
+    <h2>आपकी सेवा में हमेशा तत्पर</h2>
+
+    <p>
+        डिजिटल सेवाओं से जुड़ी जानकारी के लिए हमारे Help Center पर जाएं।
+    </p>
+
+    <a href="help.html" class="contact-btn">
+        Help & Support →
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="contact-footer">
+
+    <h3>CSC Digital Seva Kendra</h3>
+
+    <p>Prayagraj, Uttar Pradesh</p>
+
+    <p>आपकी डिजिटल सेवा, आपके द्वार।</p>
+
+    <div class="contact-footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+    </div>
+
+    <small>© 2026 CSC Digital Seva Kendra. All Rights Reserved.</small>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="contact.js"></script>
+
+</body>
+</html>
