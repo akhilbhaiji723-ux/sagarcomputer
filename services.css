@@ -1028,3 +1028,16 @@ body {
         object-position: center bottom !important;
     }
 }
+/* MOBILE NAVIGATION FIX */
+
+@media (max-width: 700px) {
+
+    .header nav {
+        display: none;
+    }
+
+    .header nav.show {
+        display: flex;
+    }
+
+}
