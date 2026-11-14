@@ -483,11 +483,35 @@ applicationForm.addEventListener("submit", event => {
 renderServices();
 
 /* MOBILE NAVIGATION */
+
 const menuToggle = document.getElementById("menuToggle");
 const navbar = document.getElementById("navbar");
 
 if (menuToggle && navbar) {
+
     menuToggle.addEventListener("click", () => {
-        navbar.classList.toggle("active");
+
+        navbar.classList.toggle("show");
+
+        const isOpen = navbar.classList.contains("show");
+
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+
     });
+
+    navbar.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navbar.classList.remove("show");
+
+            menuToggle.textContent = "☰";
+            menuToggle.setAttribute("aria-expanded", "false");
+
+        });
+
+    });
+
 }
